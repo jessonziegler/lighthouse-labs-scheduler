@@ -5,6 +5,7 @@ import InterviewerListItem from "./InterviewerListItem";
 
 export default function InterviewerList(props) {
   const interviewerList = props.interviewers.map((item) => {
+    const { onChange } = props;
     const selected = props.interviewer === item.id;
     const interviewerListClass = classNames("interviewers__item", {
       "interviewers__item--selected": selected,
@@ -14,22 +15,9 @@ export default function InterviewerList(props) {
         name={item.name}
         avatar={item.avatar}
         selected={selected}
-        setInterviewer={() => props.setInterviewer(item.id)}
+        setInterviewer={() => onChange(item.id)}
       />
     );
-
-    // return (
-    //   <div className={interviewerListClass}>
-    //     <img
-    //       key={item.id}
-    //       className={"interviewers__item-image"}
-    //       onClick={() => props.setInterviewer(item.id)}
-    //       src={item.avatar}
-    //       alt={"test"}
-    //     />
-    //     {selected && item.name}
-    //   </div>
-    // );
   });
   return (
     <section className="interviewers">
