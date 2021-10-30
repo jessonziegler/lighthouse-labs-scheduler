@@ -166,18 +166,19 @@ storiesOf("Appointment", module)
       onClose={action("onClose")}
     />
   ))
-  .add("Edit Form", () => (
+
+  .add("Create", () => (
     <Form
-      name="Jesson"
       interviewers={interviewers}
-      interviewer={2}
       onSave={action("onSave")}
       onCancel={action("onCancel")}
     />
   ))
-  .add("Create Form", () => (
+  .add("Edit", () => (
     <Form
+      name="Jesson"
       interviewers={interviewers}
+      interviewer={2}
       onSave={action("onSave")}
       onCancel={action("onCancel")}
     />
