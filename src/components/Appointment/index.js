@@ -5,9 +5,19 @@ import Empty from "components/Appointment/Empty";
 import Show from "components/Appointment/Show";
 
 export default function Appointment(props) {
-  const appointmentText = props.time
-    ? `Appointment at ${props.time}`
-    : "No Appointments";
-
-  return <article className="appointment">{appointmentText}</article>;
+  return (
+    <article className="appointment">
+      {props.time ? <Header time={props.time} /> : "No Appointments"}
+      {props.interview ? (
+        <Show
+          student={props.interview.student}
+          interviewer={props.interview.interviewer}
+          onEdit={props.onEdit}
+          onDelete={props.onDelete}
+        />
+      ) : (
+        <Empty onAdd={props.onAdd} />
+      )}
+    </article>
+  );
 }
