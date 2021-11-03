@@ -9,6 +9,7 @@ export default function InterviewerList(props) {
     // const interviewerListClass = classNames("interviewers__item", {
     //   "interviewers__item--selected": selected,
     // });
+
     return (
       <InterviewerListItem
         key={item.id}

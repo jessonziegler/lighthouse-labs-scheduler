@@ -36,6 +36,7 @@ const useApplicationData = () => {
       [id]: appointment,
     };
     let days;
+    console.log("hey", state.appointments[id].interview);
     if (state.appointments[id].interview === null) {
       days = state.days.map((day) =>
         day.appointments.includes(id) ? { ...day, spots: day.spots - 1 } : day
@@ -62,11 +63,22 @@ const useApplicationData = () => {
       const days = state.days.map((day) =>
         day.appointments.includes(id) ? { ...day, spots: day.spots + 1 } : day
       );
-      setState((prev) => ({
-        ...prev,
-        days,
-        appointments: { ...prev.appointments, interview: null },
-      }));
+
+      setState((prev) => {
+        const appointment = {
+          ...prev.appointments[id],
+          interview: null,
+        };
+        const appointments = {
+          ...prev.appointments,
+          [id]: appointment,
+        };
+        return {
+          ...prev,
+          days,
+          appointments,
+        };
+      });
     });
   }
 
