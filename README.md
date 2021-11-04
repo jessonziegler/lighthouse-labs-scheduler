@@ -2,7 +2,7 @@
 
 ## App Screenshots
 
-!["Screenshot of appointments page"]()
+!["Add Appointment"](https://github.com/jessonziegler/lighthouse-labs-scheduler/blob/master/docs/Add%20Appointment.jpg?raw=true)
 
 !["Screenshot of appointment-form page"]()
 
