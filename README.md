@@ -4,7 +4,8 @@
 
 !["Add Appointment"](https://github.com/jessonziegler/lighthouse-labs-scheduler/blob/master/docs/Add%20Appointment.jpg?raw=true)
 
-!["Screenshot of appointment-form page"]()
+!["Delete Appointment"](![image](https://user-images.githubusercontent.com/86847873/140270546-1d68fb9a-dbb6-4e89-8a63-a2963b3e6bcc.png)
+)
 
 !["Screenshot of delete-appointment page"]()
 
