@@ -5,7 +5,7 @@ import "./DayListItem.scss";
 export default function DayListItem(props) {
   const dayListClass = classNames("day-list__item", {
     "day-list__item--selected": props.selected,
-    "day-list__item--full": props.spot === 0,
+    "day-list__item--full": props.spots === 0,
   });
   const formatSpots = function (spots) {
     if (spots === 0) {

@@ -17,6 +17,7 @@ export function getInterviewersForDay(state, day) {
 
   if (!dayData[0]) return result;
   for (const a of dayData[0].interviewers) {
+    console.log(state.interviewers[a]);
     result.push(state.interviewers[a]);
   }
 
