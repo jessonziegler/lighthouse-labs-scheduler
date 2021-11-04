@@ -47,14 +47,7 @@ const useApplicationData = () => {
       );
     }
     return axios.put(`/api/appointments/${id}`, { interview }).then((res) => {
-      // if (state.appointments[id].interview === null) {
-      // const days = state.days.map((day) =>
-      //   day.appointments.includes(id) ? { ...day, spots: day.spots - 1 } : day
-      // );
       setState((prev) => ({ ...prev, days, appointments }));
-      // } else {
-      //   setState((prev) => ({ ...prev, appointments }));
-      // }
     });
   }
 

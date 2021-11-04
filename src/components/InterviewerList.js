@@ -6,9 +6,6 @@ export default function InterviewerList(props) {
 
   const interviewerList = props.interviewers.map((item) => {
     const selected = props.value === item.id;
-    // const interviewerListClass = classNames("interviewers__item", {
-    //   "interviewers__item--selected": selected,
-    // });
 
     return (
       <InterviewerListItem
