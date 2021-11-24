@@ -1,5 +1,7 @@
 # Interview Scheduler
 
+A scheduler app created with React, Express, & Node js.
+
 ## App Screenshots
 
 !["Add Appointment"](https://github.com/jessonziegler/lighthouse-labs-scheduler/blob/master/docs/Add%20Appointment.jpg?raw=true)
