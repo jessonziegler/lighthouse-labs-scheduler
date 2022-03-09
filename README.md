@@ -4,7 +4,8 @@ A scheduler app created with React, Express, & Node js.
 
 ## App Screenshots
 
-!["Add Appointment"](https://github.com/jessonziegler/lighthouse-labs-scheduler/blob/master/docs/Add%20Appointment.jpg?raw=true)
+![Scheduler](https://user-images.githubusercontent.com/86847873/157350371-7190acf1-9537-4c58-bd5a-cb235da20d05.gif)
+
 
 !["Delete Appointment"](https://github.com/jessonziegler/lighthouse-labs-scheduler/blob/master/docs/Delete%20Appointment.jpg?raw=true)
 )
